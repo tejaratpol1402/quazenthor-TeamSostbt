@@ -265,63 +265,47 @@ EDUCATIONAL PROJECT ONLY • STRICTLY NON-FINANCIAL • NO TOKEN SALE • NO FUN
 </div>
 
 <style>
-@keyframes floatUpDown {
+@keyframes spin-float {
   0% {
-    transform: translateY(-40px);
+    transform: translateY(-20px) rotate(0deg);
   }
   50% {
-    transform: translateY(40px);
+    transform: translateY(20px) rotate(180deg);
   }
   100% {
-    transform: translateY(-40px);
+    transform: translateY(-20px) rotate(360deg);
   }
 }
 
-@keyframes floatDownUp {
-  0% {
-    transform: translateY(40px);
-  }
-  50% {
-    transform: translateY(-40px);
-  }
-  100% {
-    transform: translateY(40px);
-  }
+.pulsing-bnb {
+  width: 180px;
+  height: auto;
+  animation: spin-float 12s linear infinite;
 }
 </style>
 
-<main class="wrap">
 <section style="text-align:center; margin: 30px 0 50px; position: relative;">
     <h2 class="gold-subtitle">Official Documents – Download</h2>
 
     <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 40px; margin: 25px 0;">
-
         <!-- عکس چپ -->
-        <img src="bnb3.png" alt="BNB Illustration Left"
-             style="max-width: 180px; height: auto; animation: floatUpDown 5s infinite ease-in-out;">
+        <img src="bnb3.png" alt="BNB Smart Chain Network Symbol" class="pulsing-bnb">
 
         <!-- دکمه‌ها وسط -->
         <div style="display: flex; flex-direction: column; align-items: center; gap: 18px;">
-            <a href="whitepaper.pdf" class="download-btn" download>
-                Whitepaper (PDF)
-            </a>
-
-            <a href="bscscan-official-token-information.pdf" class="download-btn" download>
-                Official Token Information (PDF)
-            </a>
-
-            <a href="https://quazenthor.com/logo.svg" class="download-btn" target="_blank">
-                Logo (SVG)
-            </a>
+            <a href="whitepaper.pdf" class="download-btn" download>Whitepaper (PDF)</a>
+            <a href="bscscan-official-token-information.pdf" class="download-btn" download>Official Token Information (PDF)</a>
+            <a href="https://quazenthor.com/logo.svg" class="download-btn" target="_blank">Logo (SVG)</a>
         </div>
 
         <!-- عکس راست -->
-        <img src="bnb3.png" alt="BNB Illustration Right"
-             style="max-width: 180px; height: auto; animation: floatDownUp 5s infinite ease-in-out;">
+        <img src="bnb3.png" alt="BNB Smart Chain Network Symbol" class="pulsing-bnb">
     </div>
 </section>
-</main>
 
+<p style="text-align:center; margin:30px 0;">
+
+</main>
 <!-- Quick Facts -->
 <section>
     <h2 class="gold-subtitle">Quick Token Facts</h2>
